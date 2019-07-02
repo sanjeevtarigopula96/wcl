@@ -14,6 +14,6 @@ FROM golang:latest
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
-//RUN go build -o leaves .
+#RUN go build -o leaves .
 EXPOSE 4000
 CMD ["/app/leaves"]
