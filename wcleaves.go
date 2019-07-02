@@ -8,7 +8,7 @@ import (
 	//"github.com/Wanclouds/wcprofiles/gen/models"
 	  //"github.com/go-openapi/errors"
 	//"home/sanjeev/go/src/github.com/go-openapi"
-	"/go/src/home/sanjeev/go/src/github.com/go-openapi/errors "
+	"home/go/src/github.com/go-openapi/errors "
 	
 	// "github.com/go-openapi/strfmt"
 )
