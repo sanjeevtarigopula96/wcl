@@ -11,8 +11,8 @@
 #CMD ["/app/wcleaves"]
 #CMD ["./leaves"]
 FROM golang:latest
-RUN mkdir /$GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+RUN mkdir /app
 WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
-ADD . /leaves/
+ADD . /app/leaves/
 EXPOSE 5000
-CMD ["/leaves"]
+CMD ["/app/leaves"]
