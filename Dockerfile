@@ -12,7 +12,7 @@
 #CMD ["./leaves"]
 FROM golang:latest
 RUN mkdir /app
-WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
-ADD . /app/leaves/
+ADD . /app/
+WORKDIR /app
 EXPOSE 4000
 CMD ["/app/leaves"]
