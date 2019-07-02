@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Wanclouds/wcprofiles/gen/models"
+	//"github.com/Wanclouds/wcprofiles/gen/models"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
 )
