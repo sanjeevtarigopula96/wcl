@@ -1,7 +1,7 @@
 FROM golang:latest
 LABEL maintainer="sanjeev <wanclouds@gmail.net>"
 WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
-ADD ./run.sh/
+COPY ./run.sh/
 # EXPOSE 5000
 #RUN mkdir /app
 #ADD . /app/
