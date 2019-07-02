@@ -11,7 +11,7 @@
 #CMD ["/app/wcleaves"]
 #CMD ["./leaves"]
 FROM golang:latest
-LABEL maintainer="sanjeev <wanclouds@gmail.net>"
+RUN mkdir /$GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 ADD . /leaves/
 EXPOSE 5000
