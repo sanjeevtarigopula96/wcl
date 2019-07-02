@@ -1,7 +1,7 @@
 FROM golang:latest
 LABEL maintainer="sanjeev <wanclouds@gmail.net>"
-WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
-COPY ./leaves
+WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
+COPY ./run .
 # EXPOSE 5000
 #RUN mkdir /app
 #ADD . /app/
@@ -9,7 +9,7 @@ COPY ./leaves
 #RUN go build -o wcleaves .
 #EXPOSE 8000
 #CMD ["/app/wcleaves"]
-CMD ["/leaves"]
+CMD ["/run"]
 #FROM golang:1.8
 #RUN mkdir /app
 #ADD . /app/
