@@ -14,5 +14,5 @@ FROM golang:latest
 LABEL maintainer="sanjeev <wanclouds@gmail.net>"
 WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 ADD . /leaves/
-# EXPOSE 5000
-CMD ["./leaves"]
+EXPOSE 5000
+CMD ["/leaves"]
