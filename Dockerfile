@@ -14,5 +14,5 @@ FROM golang:latest
 RUN mkdir /app
 WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 ADD . /app/leaves/
-EXPOSE 5000
+EXPOSE 4000
 CMD ["/app/leaves"]
