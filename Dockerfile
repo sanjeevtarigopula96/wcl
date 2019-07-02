@@ -10,7 +10,7 @@
 #EXPOSE 8000
 #CMD ["/app/wcleaves"]
 #CMD ["./leaves"]
-FROM golang:latest
+FROM golang:1.8
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
