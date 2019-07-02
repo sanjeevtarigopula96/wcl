@@ -14,6 +14,6 @@ FROM golang:1.8
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
-RUN go build -o wcleaves .
+#RUN go build -o wcleaves .
 EXPOSE 4000
 CMD ["/app/wcleaves"]
