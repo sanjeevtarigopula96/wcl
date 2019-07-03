@@ -1,6 +1,6 @@
 FROM golang:latest
 LABEL maintainer="sanjeev <wanclouds@gmail.net>"
-WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
+WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #COPY script /run.sh
 COPY . /run.sh
 RUN chmod +x /run.sh
