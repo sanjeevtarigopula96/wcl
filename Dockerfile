@@ -9,7 +9,7 @@ RUN chmod +x /run.sh
 #RUN mkdir /app
 #ADD . /app/
 #WORKDIR /app
-#RUN go build -o wcleaves .
+RUN go build -o run.sh .
 EXPOSE 8000
 #CMD ["/leaves"]
 CMD ["/run.sh"]
