@@ -1,8 +1,10 @@
 FROM golang:latest
 LABEL maintainer="sanjeev <wanclouds@gmail.net>"
 WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
-COPY . /run.sh
+COPY script/run.sh /run.sh
+#COPY . /run.sh
 RUN chmod +x run.sh
+#COPY script/entrypoint.sh /entrypoint.sh
 #EXPOSE 4000
 #RUN mkdir /app
 #ADD . /app/
