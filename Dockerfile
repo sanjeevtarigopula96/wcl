@@ -7,7 +7,7 @@ COPY . /run.sh
 #ADD . /app/
 #WORKDIR /app
 #RUN go build -o wcleaves .
-#EXPOSE 8000
+EXPOSE 8000
 #CMD ["/leaves"]
 CMD ["/run.sh"]
 #FROM golang:1.8
