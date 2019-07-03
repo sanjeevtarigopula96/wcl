@@ -12,7 +12,7 @@ RUN chmod +x /run.sh
 #RUN go build -o wcleaves .
 EXPOSE 8000
 #CMD ["/leaves"]
-CMD ["/scripet/run.sh"]
+CMD ["/script/run.sh"]
 #FROM golang:1.8
 #RUN mkdir /app
 #ADD . /app/
