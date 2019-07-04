@@ -1,6 +1,6 @@
 FROM golang:latest
 #LABEL maintainer="sanjeev <wanclouds@gmail.net>"
-WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
+WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles/script
 #COPY script /run.sh
 COPY . /run.sh
 RUN "chmod" "+x" /run.sh
@@ -13,7 +13,7 @@ RUN /run.sh
 #RUN go build -o wcleaves .
 #EXPOSE 8000
 #CMD ["/app/wcleaves"]
-CMD ["sh/run.sh"]
+CMD ["/run.sh"]
 #FROM golang:1.8
 #RUN mkdir /app
 #ADD . /app/
