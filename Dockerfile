@@ -31,4 +31,4 @@ FROM golang:latest
 WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 COPY . /leaves/
 EXPOSE 4000
-CMD [". /leaves/"]
+CMD ["/leaves/"]
