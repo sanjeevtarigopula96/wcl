@@ -28,13 +28,13 @@
 #EXPOSE 4000
 #CMD ["/app/wcleaves"]
 FROM golang:latest
-#WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles/script
-WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-#COPY . /leaves/
-COPY run.sh /root
-#RUN /root/run.sh
+WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
+#WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
+COPY . /leaves/
+#COPY run.sh /root
+RUN build leaves .
 #EXPOSE 4000
-#CMD ["/leaves/"]
+CMD ["/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
@@ -42,7 +42,7 @@ COPY run.sh /root
 # execute the script inside the container
 #RUN /root/provision.sh
 
-EXPOSE 8000
+#EXPOSE 8000
 
 # Default command
-CMD ["/bin/run.sh"]
+#CMD ["/run.sh"]
