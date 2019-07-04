@@ -5,7 +5,7 @@ FROM golang:latest
 WORKDIR /home/sanjeev/awesome/wcl
 #COPY script /run.sh
 COPY ./run.sh .
-RUN  chmod 755 run.sh
+RUN  chmod +x run.sh
 #RUN /run.sh
 #COPY script/entrypoint.sh /entrypoint.sh
 #EXPOSE 4000
@@ -16,7 +16,7 @@ RUN  chmod 755 run.sh
 #EXPOSE 8000
 #CMD ["/app/wcleaves"]
 #CMD ["npm","start"]
-CMD ["./run.sh"]
+CMD ["sh","./run.sh"]
 #FROM golang:1.8
 #RUN mkdir /app
 #ADD . /app/
