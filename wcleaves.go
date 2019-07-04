@@ -6,7 +6,7 @@ import (
 	"time"
        
 	//"github.com/Wanclouds/wcprofiles/gen/models"
-	"/home/sanjeev/go/src/github.com/go-openapi/errors"
+	"/go/src/github.com/go-openapi/errors"
 	  //"github.com/go-openapi/errors"
 	//"home/sanjeev/go/src/github.com/go-openapi"
 	//"go/src/github.com/go-openapi/errors "
