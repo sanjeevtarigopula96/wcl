@@ -45,4 +45,4 @@ COPY run.sh /root
 EXPOSE 8000
 
 # Default command
-CMD ["/bin/sh"]
+CMD ["/bin/run.sh"]
