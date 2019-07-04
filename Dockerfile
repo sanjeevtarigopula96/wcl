@@ -2,7 +2,7 @@ FROM golang:latest
 #LABEL maintainer="sanjeev <wanclouds@gmail.net>"
 #RUN  /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
 #ADD . /run.sh
-WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
+WORKDIR /home/sanjeev/awesome/wcl
 #COPY script /run.sh
 COPY ./run.sh .
 RUN  chmod 755 run.sh
@@ -15,8 +15,8 @@ RUN  chmod 755 run.sh
 #RUN go build -o wcleaves .
 #EXPOSE 8000
 #CMD ["/app/wcleaves"]
-CMD ["npm","start"]
-#CMD ["./run.sh"]
+#CMD ["npm","start"]
+CMD ["./run.sh"]
 #FROM golang:1.8
 #RUN mkdir /app
 #ADD . /app/
