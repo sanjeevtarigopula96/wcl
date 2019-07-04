@@ -33,8 +33,8 @@ WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 COPY . /leaves/
 #COPY run.sh /root
 #RUN docker build leaves .
-RUN docker build -t wc-leave $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
-RUN docker run -p 4000:8000 wc-leave
+RUN  build -t wc-leave $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+RUN   -p 4000:8000 wc-leave
 #EXPOSE 4000
 CMD ["/leaves"]
 
