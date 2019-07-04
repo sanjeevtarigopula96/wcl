@@ -32,7 +32,9 @@ WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 COPY . /leaves/
 #COPY run.sh /root
-RUN build leaves .
+RUN docker build leaves .
+#docker build -t wc-leave $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+#docker run -p 4000:8000 wc-leave
 #EXPOSE 4000
 CMD ["/leaves"]
 
