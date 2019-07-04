@@ -28,7 +28,8 @@
 #EXPOSE 4000
 #CMD ["/app/wcleaves"]
 FROM golang:latest
-WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles/script
+#WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles/script
+WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves/
 COPY run.sh /root
 RUN /root/run.sh
