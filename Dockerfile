@@ -28,7 +28,7 @@
 #EXPOSE 4000
 #CMD ["/app/wcleaves"]
 FROM golang:latest
-WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 COPY . /leaves/
 EXPOSE 4000
 CMD ["./leaves"]
