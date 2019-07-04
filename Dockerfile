@@ -36,7 +36,7 @@ FROM golang:latest
 WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 COPY . /leaves/
-RUN chmod +x leaves
+RUN chmod +x /leaves
 #COPY run.sh /root
 
 #EXPOSE 4000
