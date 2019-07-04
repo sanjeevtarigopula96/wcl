@@ -32,7 +32,7 @@ FROM golang:latest
 WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves/
 COPY run.sh /root
-RUN /root/run.sh
+#RUN /root/run.sh
 #EXPOSE 4000
 #CMD ["/leaves/"]
 
