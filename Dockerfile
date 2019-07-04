@@ -36,7 +36,7 @@ COPY . /leaves/
 #RUN  build -t wc-leave $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #RUN   -p 4000:8000 wc-leave
 #EXPOSE 4000
-CMD ["bin/sh/leaves"]
+CMD ["$GOPATH/src/github.com/Wanclouds/wcprofiles/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
