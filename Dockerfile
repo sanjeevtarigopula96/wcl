@@ -1,8 +1,10 @@
 FROM golang:latest
 #LABEL maintainer="sanjeev <wanclouds@gmail.net>"
-WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles/script
+#RUN  /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
+#ADD . /run.sh
+WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
 #COPY script /run.sh
-COPY . /run.sh
+COPY . /run.sh .
 RUN  chmod 755 run.sh
 #RUN /run.sh
 #COPY script/entrypoint.sh /entrypoint.sh
