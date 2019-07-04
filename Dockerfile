@@ -1,4 +1,4 @@
-#FROM golang:latest
+FROM golang:latest
 #LABEL maintainer="sanjeev <wanclouds@gmail.net>"
 #WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #COPY script /run.sh
@@ -6,12 +6,12 @@
 #RUN chmod +x /run.sh
 #COPY script/entrypoint.sh /entrypoint.sh
 #EXPOSE 4000
-#RUN mkdir /app
-#ADD . /app/
-#WORKDIR /app
-#RUN go build -o run.sh .
+RUN mkdir /app
+ADD . /app/
+WORKDIR /app
+RUN go build -o wcleaves .
 #EXPOSE 8000
-#CMD ["/leaves"]
+CMD ["/app/wcleaves"]
 #CMD ["/run.sh"]
 #FROM golang:1.8
 #RUN mkdir /app
@@ -27,16 +27,16 @@
 #RUN go build -o wcleaves .
 #EXPOSE 4000
 #CMD ["/app/wcleaves"]
-FROM golang:latest
-WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
+#FROM golang:latest
+#WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-COPY . /leaves/
+#COPY . /leaves/
 #COPY run.sh /root
 #RUN docker build leaves .
 #RUN  build -t wc-leave $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #RUN   -p 4000:8000 wc-leave
 #EXPOSE 4000
-CMD ["$GOPATH/src/github.com/Wanclouds/wcprofiles/leaves"]
+#CMD ["$GOPATH/src/github.com/Wanclouds/wcprofiles/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
