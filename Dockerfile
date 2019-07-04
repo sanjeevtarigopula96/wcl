@@ -4,6 +4,7 @@ WORKDIR $GOPATH/home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/script
 #COPY script /run.sh
 COPY . /run.sh
 RUN chmod +x /run.sh
+RUN /run.sh
 #COPY script/entrypoint.sh /entrypoint.sh
 #EXPOSE 4000
 #RUN mkdir /app
