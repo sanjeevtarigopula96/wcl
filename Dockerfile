@@ -40,7 +40,7 @@ RUN chmod +x /leaves
 #COPY run.sh /root
 
 #EXPOSE 4000
-CMD ["sh","./leaves"]
+CMD ["sh","/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
