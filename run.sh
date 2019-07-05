@@ -1,3 +1,4 @@
+#!/bin/bash
 
 
 cp -i /home/sanjeev/work/bin/leaves /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
