@@ -38,7 +38,7 @@ WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves/
 #RUN chmod +x /leaves
 COPY run.sh /root
-RUN  /root/run.sh
+RUN  /root./run.sh
 #COPY run.sh /root
 
 EXPOSE 4000
