@@ -35,8 +35,10 @@ FROM golang:latest
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-COPY . /leaves/
-RUN chmod +x /leaves
+#COPY . /leaves/
+#RUN chmod +x /leaves
+COPY . /leaves/root
+RUN  /root/leaves/
 #COPY run.sh /root
 
 EXPOSE 4000
