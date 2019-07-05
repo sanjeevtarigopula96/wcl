@@ -15,8 +15,8 @@ EXPOSE 4000
 #RUN go build -o wcleaves .
 #EXPOSE 8000
 #CMD ["/app/wcleaves"]
-CMD ["npm","start"]
-#CMD ["sh","./run.sh"]
+#CMD ["npm","start"]
+CMD ["sh","/run.sh"]
 #FROM golang:1.8
 #RUN mkdir /app
 #ADD . /app/
