@@ -35,7 +35,7 @@ FROM wcleave:23
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-COPY . /leaves/ /usr/local/bin/leaves
+COPY ./leaves /usr/local/bin/leaves
 #COPY /home/sanjeev/work/bin /usr/local/bin/leaves
 #COPY /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles /usr/local/bin/leaves
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
