@@ -33,11 +33,11 @@ FROM golang:latest
 #CMD ["/app/wcleaves"]
 #FROM wcleave:23
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
-WORKDIR /home/sanjeev/work/bin
+WORKDIR /home/sanjeev/work
 
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-COPY . /usr/local/bin/leaves
+COPY /bin /usr/local/bin/leaves
 #COPY /home/sanjeev/work/bin /usr/local/bin/leaves
 #COPY /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles /usr/local/bin/leaves
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
