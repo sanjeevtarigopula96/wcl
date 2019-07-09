@@ -33,11 +33,11 @@
 #CMD ["/app/wcleaves"]
 FROM golang:latest
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
-WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+#WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves
 COPY leaves/ /usr/local/bin/leaves
-
+WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #RUN chmod +x /leaves
 #COPY run.sh /root
 #RUN  /root./run.sh
