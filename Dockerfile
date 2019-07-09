@@ -38,7 +38,7 @@ FROM wcleave:23
 #COPY . /leaves
 COPY $GOPATHleaves /usr/local/bin/leaves
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
-#RUN chmod +x /leaves
+RUN sudo chmod +x /usr/local/bin/leaves
 #COPY run.sh /root
 #RUN  /root./run.sh
 #COPY run.sh /root
