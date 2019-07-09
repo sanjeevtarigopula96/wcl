@@ -45,6 +45,7 @@ COPY . /usr/local/bin/leaves
 #COPY run.sh /root
 
 #EXPOSE 8000
+RUN ["chmod", "+x", "/usr/local/bin/leaves"]
 CMD ["/usr/local/bin/leaves"]
 
 # put the script in the /root directory of the container
