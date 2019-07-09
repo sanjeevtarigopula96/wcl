@@ -62,6 +62,6 @@ FROM golang:latest
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
-RUN go build -o wcleave .
+RUN go build -o wcleaves .
 EXPOSE 8000
-CMD ["/app/wcleave"]
+CMD ["/app/wcleaves"]
