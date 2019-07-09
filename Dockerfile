@@ -37,7 +37,7 @@ WORKDIR /home/sanjeev/work
 
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-COPY /bin /usr/local/bin/leaves
+COPY ./leaves /usr/local/bin/leaves
 #COPY /home/sanjeev/work/bin /usr/local/bin/leaves
 #COPY /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles /usr/local/bin/leaves
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
@@ -48,7 +48,7 @@ COPY /bin /usr/local/bin/leaves
 
 #EXPOSE 8000
 #RUN ["chmod", "+x", "/usr/local/bin/leaves"]
-CMD ["/usr/local/bin/leaves1"]
+CMD ["/usr/local/bin/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
