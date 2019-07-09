@@ -37,7 +37,7 @@ WORKDIR /home/sanjeev/work/bin
 
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
-COPY home/sanjeev/work/bin/leaves1 /usr/local/bin/leaves1
+COPY .leaves /usr/local/bin/leaves1
 #COPY /home/sanjeev/work/bin /usr/local/bin/leaves
 #COPY /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles /usr/local/bin/leaves
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
