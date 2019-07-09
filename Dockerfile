@@ -17,13 +17,13 @@
 #CMD ["/app/wcleaves"]
 #CMD ["npm","start"]
 #CMD ["sh","./run.sh"]
-#FROM golang:1.8
-#RUN mkdir /app
-#ADD . /app/
-#WORKDIR /app
-#RUN go build -o wcleaves .
+FROM golang:latest
+RUN mkdir /app
+ADD . /app/
+WORKDIR /app
+RUN go build -o wcleaves .
 #EXPOSE 4000
-#CMD ["/app/wcleaves"]
+CMD ["/app/wcleaves"]
 #FROM golang:latest
 #RUN mkdir /app
 #ADD . /app/
@@ -31,20 +31,20 @@
 #RUN go build -o wcleaves .
 #EXPOSE 4000
 #CMD ["/app/wcleaves"]
-FROM wcleave:23
+#FROM wcleave:23
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves
-COPY /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/leaves /usr/local/bin/leaves
-WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+#COPY /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles/leaves /usr/local/bin/leaves
+#WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #RUN chmod +x /usr/local/bin/leaves
 #COPY run.sh /root
 #RUN  /root./run.sh
 #COPY run.sh /root
 
 #EXPOSE 8000
-CMD ["/usr/local/bin/leaves"]
+#CMD ["/usr/local/bin/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
