@@ -36,7 +36,7 @@ FROM wcleave:23
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves
-COPY GOPATHleaves /usr/local/bin/leaves
+COPY GOPATH leaves /usr/local/bin/leaves
 WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #RUN chmod +x /usr/local/bin/leaves
 #COPY run.sh /root
