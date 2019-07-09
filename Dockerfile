@@ -31,7 +31,7 @@
 #RUN go build -o wcleaves .
 #EXPOSE 4000
 #CMD ["/app/wcleaves"]
-FROM golang:latest
+FROM wcleave:23
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
