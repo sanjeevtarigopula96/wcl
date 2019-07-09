@@ -62,6 +62,6 @@ FROM golang:latest
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
-RUN go build -o wcleaves .
+RUN go build -o $GOPATH/src/github.com/Wanclouds/wcprofiles .
 EXPOSE 8000
 CMD ["/app/wcleaves"]
