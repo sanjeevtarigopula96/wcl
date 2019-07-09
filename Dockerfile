@@ -44,7 +44,7 @@ COPY $GOROOTleaves /usr/local/bin/leaves
 #COPY run.sh /root
 
 #EXPOSE 8000
-CMD ["usr/local/bin/leaves"]
+CMD ["/usr/local/bin/leaves"]
 
 # put the script in the /root directory of the container
 #COPY provision.sh /root
