@@ -33,11 +33,11 @@
 #CMD ["/app/wcleaves"]
 FROM wcleave:23
 #WORKDIR $GOPATH/src/github.com/Wanclouds/wcprofiles
-#WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #WORKDIR /home/sanjeev/awesome/wcl/.s2i/bin
 #COPY . /leaves
 COPY /home/sanjeev/work/bin /usr/local/bin/leaves
-WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
+#WORKDIR /home/sanjeev/work/src/github.com/Wanclouds/wcprofiles
 #RUN chmod +x /usr/local/bin/leaves
 #COPY run.sh /root
 #RUN  /root./run.sh
